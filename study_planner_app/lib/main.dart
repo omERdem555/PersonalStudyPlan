@@ -8,7 +8,7 @@ import 'package:study_planner_app/utils/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await LocalStorageService.init();
+  await LocalStorageService.init();// Veritabanını başlat
   runApp(const StudyPlannerApp());
 }
 
@@ -18,7 +18,7 @@ class StudyPlannerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => AppProvider(),
+      create: (_) => AppProvider(), // AppProvider'ı sağlayarak uygulamayı sarmala
       builder: (context, child) {
         final provider = context.watch<AppProvider>();
         return MaterialApp(
@@ -27,7 +27,7 @@ class StudyPlannerApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: provider.themeMode,
-          home: const SplashScreen(),
+          home: const SplashScreen(), // Uygulama açıldığında SplashScreen'i göster
         );
       },
     );

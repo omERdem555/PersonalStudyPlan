@@ -19,7 +19,6 @@ class ReportsScreen extends StatelessWidget {
     }
 
     final testResults = provider.testResults;
-    final studyTimeTrend = provider.studyTimeTrend;
     final subjectColors = [Colors.blue, Colors.red, Colors.green, Colors.orange, Colors.purple, Colors.teal, Colors.brown, Colors.indigo];
     final subjects = testResults.map((result) => result.subject).toSet().toList();
     final subjectTrendData = subjects.asMap().entries.map((entry) {

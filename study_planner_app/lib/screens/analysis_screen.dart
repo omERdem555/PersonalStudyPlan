@@ -39,7 +39,6 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
     });
     final activeSubject = subjectOptions.contains(selectedSubject) ? selectedSubject : allSubjectsLabel;
 
-    final filteredResults = provider.subjectResults(activeSubject);
     final subjectColors = [Colors.blue, Colors.red, Colors.green, Colors.orange, Colors.purple, Colors.teal, Colors.brown, Colors.indigo];
     final subjects = activeSubject == allSubjectsLabel
         ? subjectOptions.where((subject) => subject != allSubjectsLabel).toList()

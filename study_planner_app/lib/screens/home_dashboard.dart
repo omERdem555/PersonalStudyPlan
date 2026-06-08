@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/subject_goal.dart';
 import '../providers/app_provider.dart';
-import '../widgets/dashboard_card.dart';
 import '../widgets/primary_button.dart';
 import '../widgets/stat_chip.dart';
 import '../utils/helpers.dart';

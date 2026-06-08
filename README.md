@@ -9,5 +9,8 @@ cd "c:\Users\omere\Desktop\Dersler\3\İkinci Dönem\Mobil Programlama\Personal S
 flutter run -d web-server --web-port 8080
 
 
+cd ML
+python train.py
+
 
 Browser’da Flutter’ın verdiği URL’yi açın (genellikle http://localhost:8080)
